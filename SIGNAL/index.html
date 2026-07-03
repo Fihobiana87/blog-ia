@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIGNAL — L'actualité IA, startups & deep tech détectée en temps réel</title>
+<meta name="description" content="SIGNAL est une publication tech/IA/startups alimentée par une automatisation qui détecte les sujets qui montent et publie en continu, optimisée SEO.">
+
+<!-- SEO -->
+<meta property="og:title" content="SIGNAL — Le signal, pas le bruit.">
+<meta property="og:description" content="Publication tech/IA/startups générée et publiée en continu par une automatisation.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="./index.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html"><span class="logo__dot"></span>SIGNAL</a>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="#articles">Articles</a>
+      <a href="#pipeline">Comment ça marche</a>
+      <a href="#footer">À propos</a>
+    </nav>
+    <div class="live-indicator"><span class="live-indicator__dot"></span>PIPELINE ACTIF</div>
+  </div>
+  <div class="ticker">
+    <div class="ticker__track" id="ticker-track"></div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero">
+    <div class="hero__col">
+      <div class="hero__eyebrow">
+        <svg class="hero__waveform" viewBox="0 0 46 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 8 L4 8 L7 2 L11 14 L15 4 L19 12 L23 8 L27 8 L31 3 L35 13 L39 6 L42 8 L46 8" stroke="url(#g1)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="46" y2="0"><stop stop-color="#4ce0d2"/><stop offset="1" stop-color="#8b7fff"/></linearGradient></defs>
+        </svg>
+        <span class="eyebrow">Édition N°047 — 3 juillet 2026</span>
+      </div>
+      <h1 class="hero__title">Le signal,<br><em>pas le bruit.</em></h1>
+      <p class="hero__sub">SIGNAL surveille en continu l'actualité IA, startups et deep tech, isole ce qui compte vraiment et publie — sans attendre le lendemain matin.</p>
+      <div class="hero__actions">
+        <a href="#articles" class="btn btn-primary">Lire les derniers articles</a>
+        <a href="#pipeline" class="btn btn-ghost">Comment ça marche</a>
+      </div>
+      <div class="hero__stats">
+        <div>
+          <div class="hero__stat-value" id="article-count">—</div>
+          <div class="hero__stat-label">Articles publiés</div>
+        </div>
+        <div>
+          <div class="hero__stat-value">24/7</div>
+          <div class="hero__stat-label">Veille continue</div>
+        </div>
+        <div>
+          <div class="hero__stat-value">&lt; 15 min</div>
+          <div class="hero__stat-label">Détection → publication</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="featured-slot"></div>
+  </section>
+
+  <section class="section" id="articles">
+    <div class="section__head">
+      <h2 class="section__title">Derniers articles</h2>
+      <span class="section__count">Triés par publication récente</span>
+    </div>
+    <div class="grid" id="article-grid"></div>
+  </section>
+
+  <section class="section" id="pipeline">
+    <div class="section__head">
+      <h2 class="section__title">Comment fonctionne l'automatisation</h2>
+    </div>
+    <div class="process">
+      <div class="process__step">
+        <div class="process__num">01 · Détection</div>
+        <div class="process__title">Repérer le signal</div>
+        <p class="process__desc">Les sources IA, startups et deep tech sont surveillées en continu pour isoler les sujets dont la traction dépasse le bruit ambiant.</p>
+      </div>
+      <div class="process__step">
+        <div class="process__num">02 · Génération</div>
+        <div class="process__title">Rédiger l'article</div>
+        <p class="process__desc">Le sujet retenu est transformé en article structuré, cadré sur la ligne éditoriale et le ton de la publication.</p>
+      </div>
+      <div class="process__step">
+        <div class="process__num">03 · Vérification</div>
+        <div class="process__title">Contrôler avant diffusion</div>
+        <p class="process__desc">Un score de pertinence et un contrôle de cohérence filtrent ce qui n'atteint pas le niveau d'exigence de la publication.</p>
+      </div>
+      <div class="process__step">
+        <div class="process__num">04 · Publication</div>
+        <div class="process__title">Mettre en ligne</div>
+        <p class="process__desc">L'article est publié sur le site, optimisé pour le référencement, puis relayé sur les réseaux au moment le plus pertinent.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a class="logo" href="index.html"><span class="logo__dot"></span>SIGNAL</a>
+        <p class="footer-tagline">Une publication tech/IA/startups pilotée par une automatisation de veille et de publication, testée en conditions réelles.</p>
+      </div>
+      <form class="newsletter" onsubmit="return false;">
+        <input type="email" placeholder="vous@exemple.com" aria-label="Adresse e-mail">
+        <button type="submit">S'abonner</button>
+      </form>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> SIGNAL</span>
+      <span>Site de test — automatisation de publication</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/articles-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
